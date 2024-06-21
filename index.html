@@ -16,22 +16,25 @@
 <body>
     <header id="headerBar">
         <h3 id="title">Meal App</h3>
-        
-        <i class="fa-solid fa-list"></i>
+        <i class="fa-solid fa-list" id="toggleList"></i>
     </header>
-    <body>
-       
-        <div class="title2"> 
-            
-            <h1>Find Meals For You</h1>
-            <input id="search" placeholder="    Search Food,Receipe">
-        
+    <div class="title2"> 
+        <h1>Find Meals For You</h1>
+        <input id="search" placeholder="    Search Food,Recipe">
+    </div>
+    <div id="mealCardContainer"></div>
+    <div id="mealModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalMealContent"></div>
         </div>
-        <div id="mealCardContainer">
-
+    </div>
+    <div id="listContainer" class="list-container">
+        <div class="list-header">
+            <h2>Favourite Items</h2>
         </div>
-    </body>
+        <div id="listContent"></div>
+    </div>
     <script src="script.js"></script>
-
 </body>
 </html>
